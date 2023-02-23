@@ -2,8 +2,7 @@ from rest_framework import serializers
 from task_app.models import Task,Tile
 
 class TaskSerializer(serializers.ModelSerializer):
-    tile = serializers.CharField(source='tile.name')
-    
+    # tile = serializers.CharField(source='tile.name')
     class Meta: 
         model = Task 
         fields = '__all__'
